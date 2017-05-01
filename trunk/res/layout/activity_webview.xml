@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical" >
+
+    <!-- 标题头 -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/topbar_height"
+        android:background="@color/common_topbar_color" >
+
+        <TextView
+            android:id="@+id/wb_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="middle"
+            android:gravity="center"
+            android:maxWidth="200dip"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/topbar_title_textSize" >
+        </TextView>
+
+        <Button
+            android:id="@+id/wb_left_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/back_red"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/topbar_btn_textsize"
+             >
+        </Button>
+
+        <Button
+            android:id="@+id/wb_close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/close_btn_icon"
+            android:gravity="center"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/common_theme_color"
+            android:textSize="@dimen/topbar_btn_textsize"
+            android:layout_toRightOf="@+id/wb_left_btn"
+             >
+        </Button>
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/service_wv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 基本颜色 -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#ff888888</color>
+    <color name="black">#313131</color>
+    <color name="bgray">#6a6a6a</color>
+    <color name="green">#2A4302</color>
+    <color name="red">#ffff0000</color>
+    <color name="blue">#0000FF</color>
+    <color name="transparent">#00000000</color>
+    <color name="common_bg_color">#F2F2F2</color>
+    <color name="bg_gray">#FFE3E3E7</color>
+    <color name="common_topbar_color">#FAFAFA</color>
+    <color name="common_theme_color">#E52F03</color>
+    <color name="font_light_gray_color">#c8c8c8</color>
+    <color name="more_line">#eeeeee</color>
+    <color name="more_select_bg">#afaeae</color>
+    <color name="logout_btn_bg_pressed">#720003</color>
+    <color name="logout_btn_bg">#990003</color>
+    <color name="resetpass_btn_bg_pressed">#a12306</color>
+    <color name="resetpass_btn_bg">#e52e04</color>
+    <color name="str_orange">#fe7b27</color>
+    <color name="camera_orange">#ff6600</color>
+    <color name="statistics_tprice_bg">#ff5a00</color>
+    <color name="whiteGray">#ffC9CACB</color>
+    <color name="orange_btn_bg_up_color">#fda231</color>
+    <color name="orange_btn_bg_down_color">#eb8300</color>
+    
+    <!-- home -->
+    <color name="home_bg">#1F2123</color>
+    
+    <color name="text_red_color">#f42472</color>
+    <color name="border_gray_color">#D0D0D0</color>
+    <color name="blue_bg_color">#00CEB8</color>
+    <color name="orange_bg_color">#FFB128</color>
+    <color name="pink_bg_color">#FEE2EC</color>
+    <color name="text_black_color">#2F2F2F</color>
+	<color name="text_gray2_color">#888888</color>
+	<color name="text_blue_color">#0080FF</color>
+
+</resources>

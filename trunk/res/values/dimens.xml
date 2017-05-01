@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+     <!-- 顶部菜单主标题的字体大小 -->
+	<dimen name="topbar_title_textSize">18sp</dimen>
+	<!-- 顶部菜单的高度 -->
+	<dimen name="topbar_height">60dip</dimen>
+	<!-- 顶部菜单按钮字体大小 -->
+	<dimen name="topbar_btn_textsize">17sp</dimen>
+	<!-- 设置内容距离标题栏的高度 -->
+	<dimen name="setting_padding_top">15dp</dimen>
+	<!-- 设置那里输入框的高度,推荐 h设为35dp,xh设为40dp-->
+	<dimen name="setting_edit_height">40dp</dimen>
+	
+	
+	<!-- 共用 -->
+	<dimen name="text_padding">10dip</dimen>
+	
+	
+	<!-- 关于我们 -->
+	<dimen name="about_us_content_textSize">14sp</dimen>
+	<dimen name="about_us_title_textSize">16sp</dimen>
+	<dimen name="about_us_table_textSize">12sp</dimen>
+	<dimen name="about_us_table_marginTop">3sp</dimen>
+	
+
+    <dimen name="ok_btn_height">40dip</dimen>
+    <dimen name="ok_btn_text_size">15dip</dimen>
+    
+    <dimen name="text_width">80dip</dimen>
+    
+	
+</resources>
