@@ -74,7 +74,7 @@ public class NumShulteActivity extends BaseActivity implements OnClickListener, 
 		selectNode = -1;
 		selectItem = -1;
 		
-		int[] initRandom = RandomNumUtil.GetRandomSequence(totalNode,8);
+		int[] initRandom = RandomNumUtil.GetRandomSequence(totalNode,9);
 		tempData.clear();
 		for (int i = 0; i < initRandom.length; i++) {
 			tempData.add(wordGroup[initRandom[i]]);

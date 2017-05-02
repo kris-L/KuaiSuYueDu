@@ -30,11 +30,11 @@ public class RandomNumUtil {
 	
 	/**
 	 * 生成不重复的随机数
-	 * @param total:随机数数量    maxNum：随机数最大值 0-maxNum 
+	 * @param total:随机数数量 ;   maxNum：随机数最大值 0-maxNum-1 
 	 * @return
 	 */
 	public static int[] GetRandomSequence(int total,int maxNum) {
-		if (total > maxNum+1) {
+		if (total > maxNum) {
 			System.out.println("参数有误");
 			return null; 
 		}

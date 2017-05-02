@@ -6,14 +6,12 @@
     android:background="@color/white"
      >
     
-    
-    
       <com.kris.kuaisuyuedu.ui.view.UnScrollGridView
         android:id="@+id/shulte_gv"
-        android:layout_width="480dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:horizontalSpacing="0.0dip"
-        android:verticalSpacing="0.0dip" 
+        android:horizontalSpacing="-1dip"
+        android:verticalSpacing="-1dip" 
         android:listSelector="@null"
         android:numColumns="3"
         android:scrollbars="none"
