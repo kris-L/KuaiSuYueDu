@@ -55,6 +55,12 @@
         <!--数字舒尔特 -->
         <activity
             android:name=".ui.NumShulteActivity"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        
+         <!--数字舒尔特 -->
+        <activity
+            android:name=".ui.GridViewTest"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         

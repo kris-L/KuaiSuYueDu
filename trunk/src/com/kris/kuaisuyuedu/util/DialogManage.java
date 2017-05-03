@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 
 import com.kris.kuaisuyuedu.R;
 import com.kris.kuaisuyuedu.data.Const;
+import com.kris.kuaisuyuedu.ui.GridViewTest;
 import com.kris.kuaisuyuedu.ui.NumShulteActivity;
 import com.kris.kuaisuyuedu.ui.view.SelfDialog;
 
@@ -67,8 +68,9 @@ public class DialogManage {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				if (type == Const.TEXT_EXAM_TYPE) {
-//					Intent intent_four = new Intent(mContext, TextEightNodeActivity.class);
-//					mContext.startActivity(intent_four);
+					Intent intent_four = new Intent(mContext, GridViewTest.class);
+					mContext.startActivity(intent_four);
+					
 				}else if (type == Const.PICTURE_EXAM_TYPE) {
 //					Intent intent_four = new Intent(mContext, PicEightNodeActivity.class);
 //					mContext.startActivity(intent_four);

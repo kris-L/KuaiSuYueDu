@@ -17,6 +17,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.GridView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -28,7 +29,8 @@ import com.kris.kuaisuyuedu.util.RandomNumUtil;
 public class NumShulteActivity extends BaseActivity implements OnClickListener, OnItemClickListener{
 	
 	private Context mContext;
-	private UnScrollGridView node_gv;
+//	private UnScrollGridView node_gv;
+	private GridView node_gv;
 	
 	
 	private int selectNode = -1;
@@ -65,7 +67,8 @@ public class NumShulteActivity extends BaseActivity implements OnClickListener, 
 
 	private void initViews() {
 		
-		node_gv = (UnScrollGridView) findViewById(R.id.shulte_gv);
+//		node_gv = (UnScrollGridView) findViewById(R.id.shulte_gv);
+		node_gv = (GridView) findViewById(R.id.shulte_gv);
 		node_gv.setOnItemClickListener(this);
 		
 	}
