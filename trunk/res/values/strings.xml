@@ -9,5 +9,13 @@
         <!-- 升级 -->
     <string name="soft_updating">正在更新</string>
     <string name="soft_update_cancel">取消</string>
-
+    <!-- 注册 -->
+    <string name="registerShowStr">手机码:</string>
+    <string name="registerTextStr">注册码:</string>
+	<string name="registerTextShowStr">在此输入获取的注册码</string>
+	<string name="registerClearStr">清除注册信息</string>
+	<string name="zhantieStr">粘贴</string>
+	<string name="app_register_str">注册</string>
+	
+	
 </resources>

@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.View.OnClickListener;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
@@ -35,7 +36,7 @@ public class NumShulteActivity extends BaseActivity implements OnClickListener, 
 	
 	private int selectNode = -1;
 	private int selectItem = -1;
-	private int totalNode = 9;
+	private int totalNode = 81;
 	
 	private String wordGroup[] = new String[totalNode];
 	private List<String> nodeData = new ArrayList<String>();
@@ -45,7 +46,10 @@ public class NumShulteActivity extends BaseActivity implements OnClickListener, 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		baseSetBodyView(R.layout.activity_num_shulte, true);
+		//取消状态栏
+		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, 
+		WindowManager.LayoutParams.FLAG_FULLSCREEN); 
+		baseSetBodyView(R.layout.activity_num_shulte, false);
 		setTitleText("3*3舒尔特");
 		setBtnLeftBackground(R.drawable.back_red);
 		setBtnLeftVisiable(true);
@@ -77,7 +81,7 @@ public class NumShulteActivity extends BaseActivity implements OnClickListener, 
 		selectNode = -1;
 		selectItem = -1;
 		
-		int[] initRandom = RandomNumUtil.GetRandomSequence(totalNode,9);
+		int[] initRandom = RandomNumUtil.GetRandomSequence(totalNode,totalNode);
 		tempData.clear();
 		for (int i = 0; i < initRandom.length; i++) {
 			tempData.add(wordGroup[initRandom[i]]);

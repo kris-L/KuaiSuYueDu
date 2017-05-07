@@ -1,42 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white"
-    android:orientation="vertical" >
+    android:layout_height="fill_parent"
+    android:scrollbars="none" >
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
 
-<!--         <GridView -->
-<!--             android:id="@+id/shulte_gv" -->
-<!--             android:layout_width="130dp" -->
-<!--             android:layout_height="wrap_content" -->
-<!--             android:layout_centerHorizontal="true" -->
-<!--             android:background="@color/gray" -->
-<!--             android:columnWidth="40dp" -->
-<!--             android:gravity="center" -->
-<!--             android:numColumns="3" -->
-<!--             android:stretchMode="columnWidth" > -->
-<!--         </GridView> -->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" >
 
-        <com.kris.kuaisuyuedu.ui.view.UnScrollGridView
-            android:id="@+id/shulte_gv"
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="15dp"
-            android:gravity="center"
-            android:horizontalSpacing="-1dip"
-            android:listSelector="@null"
-            android:numColumns="3"
-            android:scrollbars="none"
-            android:stretchMode="columnWidth"
-            android:verticalSpacing="-1dip" />
-    </RelativeLayout>
+            <com.kris.kuaisuyuedu.ui.view.UnScrollGridView
+                android:id="@+id/shulte_gv"
+                android:layout_width="540dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_toLeftOf="@+id/right_ll"
+                android:gravity="center"
+                android:horizontalSpacing="-1dip"
+                android:listSelector="@null"
+                android:numColumns="9"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="-1dip" />
 
-</LinearLayout>
+            <LinearLayout
+                android:id="@+id/right_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="用时"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="0"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="正确"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="0"
+                    android:textSize="18dp" />
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="错误"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="0"
+                    android:textSize="18dp" />
+                
+                <Button 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开始"
+                    />
+                
+                <Button 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="返回"
+                    />
+                
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- <LinearLayout -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:background="@color/white" -->
+        <!-- android:orientation="horizontal" > -->
+
+
+        <!-- <RelativeLayout -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:background="@color/red" -->
+        <!-- > -->
+
+
+        <!-- <com.kris.kuaisuyuedu.ui.view.UnScrollGridView -->
+        <!-- android:id="@+id/shulte_gv" -->
+        <!-- android:layout_width="540dp" -->
+        <!-- android:layout_height="540dp" -->
+        <!-- android:layout_centerHorizontal="true" -->
+        <!-- android:layout_gravity="center_horizontal" -->
+        <!-- android:layout_marginLeft="20dp" -->
+        <!-- android:layout_marginRight="20dp" -->
+        <!-- android:layout_marginTop="15dp" -->
+        <!-- android:gravity="center" -->
+        <!-- android:horizontalSpacing="-1dip" -->
+        <!-- android:listSelector="@null" -->
+        <!-- android:numColumns="9" -->
+        <!-- android:scrollbars="none" -->
+        <!-- android:stretchMode="columnWidth" -->
+        <!-- android:verticalSpacing="-1dip" -->
+        <!-- android:background="@color/gray" -->
+        <!-- /> -->
+        <!-- </RelativeLayout> -->
+
+
+        <!-- <LinearLayout -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:orientation="vertical" -->
+        <!-- > -->
+
+
+        <!-- <TextView -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- /> -->
+
+
+        <!-- </LinearLayout> -->
+
+
+        <!-- </LinearLayout> -->
+    </LinearLayout>
+
+</ScrollView>
